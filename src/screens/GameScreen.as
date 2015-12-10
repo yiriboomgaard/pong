@@ -42,6 +42,7 @@ package screens
 			}	
 			paddles.push(new AI());
 			paddles.push(new Player());
+			paddles[1].maxSpeed = 20;
 			paddles[0].balls = balls;
 			for (i = 0; i < 2; i++) 
 			{
@@ -119,6 +120,7 @@ package screens
 			}
 			balls.splice(0, balls.length);
 		}
+	
 	}
 
 }

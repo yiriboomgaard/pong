@@ -18,7 +18,7 @@ package sounds
 		private var _main:Main;
 		public function SoundPlayer(main:Main):void
 		{
-			_main = main;			
+			_main = main;
 			
 			loadSound("../lib/pong.mp3");			
 			loadSound("../lib/pong2.mp3");			
@@ -30,9 +30,15 @@ package sounds
 			_main.addEventListener(GameScreen.GAME_OVER, onGameOver, true);
 			_main.addEventListener(IntroScreen.START_GAME, onIntro, true);
 			
+			
 		}
 		
-		private function onIntro(e:Event):void 
+		private function onScore(e:Event):void
+		{
+			playSound(5)
+		}
+		
+		private function onIntro(e:Event):void
 		{
 			playSound(4);
 		}

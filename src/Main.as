@@ -5,6 +5,7 @@ package
 	import screens.GameOverScreen;
 	import screens.GameScreen;
 	import screens.IntroScreen;
+	import screens.Scoreboard;
 	import sounds.SoundPlayer;
 	
 	/**
@@ -17,6 +18,7 @@ package
 		private var introScreen:IntroScreen;
 		private var gameOverScreen:GameOverScreen;
 		private var soundPlayer:SoundPlayer;
+		private var ScoreScreen:Scoreboard;
 		
 		public function Main() 
 		{

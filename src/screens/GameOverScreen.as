@@ -28,7 +28,7 @@ package screens
 						
 			title = new TextField();
 			title.embedFonts = true;
-			title.text = "game over";
+			title.text = "you lose";
 			title.autoSize = TextFieldAutoSize.CENTER;			
 			title.setTextFormat(textFormat);		
 			
