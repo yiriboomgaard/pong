@@ -8,7 +8,7 @@ package screens
 	import flash.events.KeyboardEvent;
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Yiri Boomgaard
 	 */
 	public class IntroScreen extends Screen 
 	{

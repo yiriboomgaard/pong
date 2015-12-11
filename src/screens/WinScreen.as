@@ -11,12 +11,12 @@ package screens
 	 * ...
 	 * @author Yiri Boomgaard
 	 */
-	public class GameOverScreen extends Screen 
+	public class WinScreen extends Screen 
 	{
 		private var title:TextField;
 		private var timer:Timer;
 		public static const RESET:String = "reset";
-		public function GameOverScreen() 
+		public function WinScreen() 
 		{
 			this.addEventListener(Event.ADDED_TO_STAGE, init);
 			
@@ -28,7 +28,7 @@ package screens
 						
 			title = new TextField();
 			title.embedFonts = true;
-			title.text = "you lose";
+			title.text = "you win";
 			title.autoSize = TextFieldAutoSize.CENTER;			
 			title.setTextFormat(textFormat);		
 			

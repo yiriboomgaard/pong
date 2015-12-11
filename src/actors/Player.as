@@ -1,10 +1,11 @@
+//link: https://github.com/yiriboomgaard/pong.git
 package actors 
 {
 	import utils.Controller;	
 	import flash.events.Event;
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Yiri Boomgaard
 	 */
 	public class Player extends Paddle 
 	{

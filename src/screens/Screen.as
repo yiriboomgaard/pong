@@ -4,7 +4,7 @@ package screens
 	import flash.text.TextFormat;
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Yiri Boomgaard
 	 */
 	public class Screen extends MovieClip
 	{

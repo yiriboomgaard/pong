@@ -14,7 +14,8 @@ package screens
 	
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Yiri Boomgaard
+	 * 
 	 */
 	public class GameScreen extends Screen
 	{
@@ -22,6 +23,7 @@ package screens
 		private var paddles:Array = [];
 		private var scoreboard:Scoreboard;
 		static public const GAME_OVER:String = "game over";
+		static public const WIN_SCREEN:String = "you win"
 		static public const BALL_BOUNCE:String = "ballBounce";
 		public function GameScreen() 
 		{
@@ -102,12 +104,18 @@ package screens
 		
 		private function checkScore():void 
 		{
-			if (scoreboard.player1 >= 10 || scoreboard.player2 >= 10)
+			if (scoreboard.player2 >= 10)
 			{
 				destroy();
 				dispatchEvent(new Event(GAME_OVER));
 				
 			}
+			
+		if (scoreboard.player1 >= 1)
+		{
+			destroy();
+			dispatchEvent(new Event(WIN_SCREEN))
+		}
 			
 		}
 			

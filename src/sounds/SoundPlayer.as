@@ -9,7 +9,7 @@ package sounds
 	import screens.*;
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Yiri Boomgaard
 	 */
 	public class SoundPlayer 
 	{
